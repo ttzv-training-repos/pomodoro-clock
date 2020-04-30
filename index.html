@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pomodoro Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="d-flex justify-content-center">
+
+  <div class="pt-3">
+    <h1 class="text-center my-5">Pomodoro Clock</h1>
+    <div class="clock dbg-brd">
+        <div class="main-display dbg-brd">
+          <div class="label" id="main-display-lab">sess-status-label</div>
+          <div class="display" id="main-display">00:00:00</div>
+        </div>
+        <div class="controls dbg-brd">
+          <div class="sub-ctrls session dbg-brd">
+            <div class="dbg-brd sub-ctrl-el label">Session</div>
+            <div class="dbg-brd sub-ctrl-el sub-display" id="sub-sess-disp"></div>
+            <div class="sub-ctrl-btns">
+              <div class="dbg-brd sub-ctrl-el button incr" data-role="session-incr">+</div>
+              <div class="dbg-brd sub-ctrl-el button decr" data-role="session-decr">-</div>
+            </div>
+          </div>
+          <div class="sub-ctrls ctrl-btns dbg-brd">
+            <div class="dbg-brd sub-ctrl-el button m-btn btn-start" data-role="start">></div>
+            <div class="dbg-brd sub-ctrl-el button m-btn btn-pause" data-role="pause">||</div>
+            <div class="dbg-brd sub-ctrl-el button m-btn btn-stop"  data-role="stop">s</div>
+            <div class="dbg-brd sub-ctrl-el button m-btn btn-reset" data-role="reset">r</div>
+          </div>
+          <div class="sub-ctrls break dbg-brd">
+            <div class="dbg-brd sub-ctrl-el label">Break</div>
+            <div class="dbg-brd sub-ctrl-el sub-display" id="sub-brk-disp"></div>
+            <div class="sub-ctrl-btns">
+              <div class="dbg-brd sub-ctrl-el button incr" data-role="break-incr">+</div>
+              <div class="dbg-brd sub-ctrl-el button decr" data-role="break-decr">-</div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

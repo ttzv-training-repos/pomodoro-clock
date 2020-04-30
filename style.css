@@ -1,0 +1,69 @@
+.clock{
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dbg-brd{
+    border: 1px solid red;
+}
+
+.main-display{
+    height: 100px;
+    width: 480px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.controls{
+    width: 480px;
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sub-ctrls{
+    padding: 10px;
+}
+
+.sub-ctrl-btns{
+    display: flex;
+}
+
+.sub-ctrl-el{
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.sub-ctrl-el:hover{
+    background-color: black;
+}
+
+.button{
+    width: 30px;
+    height: 30px;
+}
+
+.ctrl-btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.m-btn{
+    width: 40px;
+    height: 40px;
+}
+
+
+
