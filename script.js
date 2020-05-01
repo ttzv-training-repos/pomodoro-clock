@@ -11,6 +11,7 @@ class PomodoroTimer{
         this.seconds = 0;
         this.swapIter = 1;
         this.isSession = true;
+        this.audio = new Audio('asset/Gentle-wake-alarm-clock.mp3');
     }
 
     stop(){
@@ -34,6 +35,7 @@ class PomodoroTimer{
             this.isSession = false;
         }
         this.swapIter++;
+        this.audio.play();
     }
 
     sessionIncr(){

@@ -1,13 +1,32 @@
+
+body{
+    background-image: url('asset/tomato-22.jpg');
+    /* background-size: cover; */
+    background-repeat: no-repeat;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+}
+
 .clock{
-    height: 500px;
     width: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(156, 0, 0);
+    border-radius: 5px;
+    border:6px outset rgb(212, 0, 0);
+    -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
 }
 
+
 .dbg-brd{
-    border: 1px solid red;
+    border: 1px solid rgb(8, 148, 31);
+    border-radius: 45px;
+    overflow: hidden;
 }
 
 .main-display{
@@ -18,38 +37,59 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background: linear-gradient(45deg, #52b152 0%,#008a00 49%,#005700 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+    border: 4px ridge rgb(0, 167, 0);
+
 }
 
 .controls{
     width: 480px;
     height: 370px;
+    margin: 5px 25px 5px 25px;
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    background-color: rgb(187, 1, 1);
+    border: none;
+    -webkit-box-shadow: 2px 2px 2px 1px rgba(117,0,0,1);
+    -moz-box-shadow: 2px 2px 2px 1px rgba(117,0,0,1);
+    box-shadow: 2px 2px 2px 1px rgba(117,0,0,1);
 }
 
 .sub-ctrls{
+    background-color: rgb(173, 0, 0);
     padding: 10px;
+    border: 4px ridge rgb(167, 136, 0);
+    border-radius: 8px;
+    -webkit-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 0px 25px 0px rgba(0,0,0,0.75);
 }
 
 .sub-ctrl-btns{
     display: flex;
+    justify-content: center;
 }
 
 .sub-ctrl-el{
     margin: 5px;
     text-align: center;
-    padding: 5px;
-}
-
-.sub-ctrl-el:hover{
-    background-color: black;
 }
 
 .button{
-    width: 30px;
-    height: 30px;
+    background: radial-gradient(ellipse at center, #ffe500 0%,#ea9035 49%,#a85826 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border: 3px ridge rgb(158, 108, 0);
+    border-radius: 6px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ctrl-btns{
